@@ -1,0 +1,11 @@
+For Jenkins Slave 
+
+Step-1: Need to create Master Jenkins
+Step-2: In Master create public and private key
+Step-3: Create Slave machine 
+Step-4: In slave machine create a (Directory)
+Step-4: Go to Manage Jenkins and Click (Nodes) 
+--> Need to give the (Ip address), (Crendentails), (PrivateKey)
+Step-5: Add crendentails for the (Slave) machine    # What crendentails need to create for the slave 
+--> User name like (ec2-user,Ubuntu)
+--> Private Key where you created the AWS private key

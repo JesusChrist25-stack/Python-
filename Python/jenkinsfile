@@ -1,0 +1,28 @@
+pipeline {
+    agent none
+    stages {
+        stage('date') {
+            agent {
+                label 'Omega'
+            }
+            steps {
+                sh 'date'
+            }
+        }
+        stage('uptime') {
+            agent {
+                label 'Alpha'
+            }
+            steps {
+                sh 'uptime'
+            }
+        }
+        stage('Checking the disk') {
+            steps {
+                sh 'lsblk'
+            }
+        }
+    }
+}
+
+
